@@ -4,6 +4,8 @@ NOTE: This is an early revision of a board which I am in the process of revising
 
 With that disclaimer out of the way, "Magrat" is an STM32H7 board which aims to integrate external memories in a low-cost format. It is designed for single-sided PCA with parts from the LCSC catalog, so you should be able to order them 'as is' from JLCPCB.
 
+(TODO: add generated gerbers, BoM, pick-and-place files)
+
 ## Features
 
 * STM32H7x3II: Cortex-M7, 480MHz, 2MiB Flash, 1MiB RAM
