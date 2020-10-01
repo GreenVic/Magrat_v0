@@ -2,7 +2,9 @@
 
 NOTE: This is an early revision of a board which I am in the process of revising. I'm publishing the design files for the sake of sharing now that I've tested many (but not all) of the board's main features, but there are plenty of improvements which should be made, and you should not treat this as a solid reference implementation or a finalized production-ready design.
 
-With that disclaimer out of the way, "Magrat" is an STM32H7 board which aims to integrate enough external memory to run a minimal Linux system in a low-cost format. It is designed for single-sided PCA with parts from the LCSC catalog, so you should be able to order it 'as is' from JLCPCB when / if the parts are in stock.
+In particular, the SDRAM traces need better length- and impedance-matching; they seem to work up to 80-100MHz, but the chips are rated for 166MHz. The BOOT0 and JTAG signals should also be broken out, because the STM32H7's myriad clock domains seem to cause minor issues with SWD debugging.
+
+With those disclaimers out of the way, "Magrat" is an STM32H7 board which aims to integrate enough external memory to run a minimal Linux system in a low-cost format. It is designed for single-sided PCA with parts from the LCSC catalog, so you should be able to order it 'as is' from JLCPCB when / if the parts are in stock.
 
 This board should be able to run a mainline Linux kernel, and I've gotten one booting, but I'm still working on bringing up a fully-functional system, and I'm not quite sure that the microSD card socket works yet.
 
@@ -17,11 +19,11 @@ This board should be able to run a mainline Linux kernel, and I've gotten one bo
 
 * STM32H7x3II: Cortex-M7, 480MHz, 2MiB Flash, 1MiB RAM
 
-* 32MiB SDRAM (~80MHz top speed in this revision)
+* 32MiB SDRAM
 
 * 16MiB Quad-SPI Flash
 
-* 50-pin ILI9341 TFT display connector (untested)
+* 50-pin ILI9341 display connector (untested)
 
 * USB full-speed (untested)
 
