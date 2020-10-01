@@ -8,6 +8,11 @@ This board should be able to run a mainline Linux kernel, and I've gotten one bo
 
 (TODO: add generated gerbers, BoM, pick-and-place files)
 
+# Board Renders:
+
+![Board Top](board_renders/render_top.png)
+![Board Bottom](board_renders/render_bot.png)
+
 ## Features
 
 * STM32H7x3II: Cortex-M7, 480MHz, 2MiB Flash, 1MiB RAM
